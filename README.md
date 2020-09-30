@@ -43,10 +43,7 @@ I manually added **devtools** and **p6spy-spring-boot-starter** after buding gra
 
 # 3. Entity structure 
 
-<div>
-	<img width=400 src="https://github.com/deutschkihun/ordersystem-Springboot/issues/1#issue-712233272>
-			 
-</div>
+<img width=400 src="https://github.com/deutschkihun/ordersystem-Springboot/issues/1#issue-712233272>			 
 
 
 
