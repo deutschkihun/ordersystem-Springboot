@@ -49,11 +49,15 @@ I manually added **devtools** and **p6spy-spring-boot-starter** after buding gra
 
 # 4. Database structure 
 
-
 <div>
 <img width="500" src="https://user-images.githubusercontent.com/45092135/94732654-d6c95b80-0366-11eb-80e0-746f5fad1e2a.JPG">			 
 </div>
 
+# 5. Application architecture
+
+<div>
+<img width="500" src="https://user-images.githubusercontent.com/45092135/94734410-7be53380-0369-11eb-836d-17215d72d7c3.JPG">			 
+</div>
 
 
 
