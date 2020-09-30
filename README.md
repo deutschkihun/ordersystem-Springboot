@@ -13,9 +13,35 @@ In this website you can make your own Spring project with many different librari
 - thymeleaf
 - Sprig
 
-**Attention**: please use Spring version 2.1 xxx version. If you select over 2.1xx like 2.2... or 2.3... the Junit4 library is changed into Junit5 so that it can make a issue to compile
+**Attention**: please use Spring version **2.1 xxx version**. If you select over 2.1xx like 2.2... or 2.3... the Junit4 library is changed into Junit5 so that it can make a issue to compile
 
 # 2.Gradle Dependencies 
+
+**dependencies**
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+  
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+  
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+  
+	implementation 'org.springframework.boot:spring-boot-devtools'
+  
+	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.6.2'
+  
+	compileOnly 'org.projectlombok:lombok'
+  
+	runtimeOnly 'com.h2database:h2'
+  
+	annotationProcessor 'org.projectlombok:lombok'
+  
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+I manually added **devtools** and **p6spy-spring-boot-starter** after buding gradle file. all the other things will be automatically builed when you generate your project with Spring boot start.But I strongly recommed just clone this project.
+
+
+# 3. Entity structure 
 
 
 
