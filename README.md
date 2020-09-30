@@ -11,6 +11,7 @@ In this website you can make your own Spring project with many different librari
 - h2 database
 - JPA
 - thymeleaf
+- Build tool: gradle
 
 ## h2 database setting 
 You have to download h2 databse in your local pc [Download link](https://www.h2database.com/html/download.html)   
