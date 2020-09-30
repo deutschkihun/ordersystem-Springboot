@@ -12,12 +12,35 @@ In this website you can make your own Spring project with many different librari
 - JPA
 - thymeleaf
 
+## h2 database setting 
+You have to download h2 databse in your local pc [Download link](https://www.h2database.com/html/download.html)   
+
+	spring:
+	  datasource:
+	    url: jdbc:h2:tcp://localhost/~/ordersystem
+	    username: sa
+	    password:
+	    driver-class-name: org.h2.Driver
+	  jpa:
+	    hibernate:
+	      ddl-auto: create
+	    properties:
+	      hibernate:
+	        #show_sql: true
+	        format_sql: true
+	        default_batch_fetch_size: 100
+	
+	logging:
+	  level:
+	    org.hibernate.SQL: debug
+	   # org.hibernate.type: trace
+
 **Attention**: please use Spring version **2.1 xxx version**. If you select over 2.1xx like 2.2... or 2.3... the Junit4 library is changed into Junit5 so that it can make a issue to compile
 
 # 2.Gradle Dependencies 
 
 **dependencies**
-
+ 
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
   
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
@@ -59,7 +82,13 @@ I manually added **devtools** and **p6spy-spring-boot-starter** after buding gra
 </div>
 
 
+# 6. API optimization 
 
+In this project it's implemented following method for API optimization 
+
+1. not shwoing entity directly, use java stream to convert into DTO 
+2. fetch join with DTO
+3. JPA search DTO directly 
 
 
 
